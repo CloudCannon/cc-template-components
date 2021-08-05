@@ -144,5 +144,17 @@ body {
 		border-radius: 30px;
 		font-weight: bold;
 	}
+
+	.c-footer {
+		&__column li {
+			padding: 0 25px;
+			max-width: 313px;
+			font-size: 1.4em;
+		}
+
+		&__link:hover {
+			text-decoration: none;
+		}
+	}
 }
 
