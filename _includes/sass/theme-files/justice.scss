@@ -22,6 +22,37 @@ body {
     p, ul, ol, li {
         color: var(--text-color);
     }
+
+    .c-navigation { $c: &;
+        
+        @media (max-width: 700px) {
+            &__inner-wrapper {
+                align-items: center;
+             }
+
+             &__nav-items {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;;
+             }
+
+             &__item-wrapper {
+                width: auto;
+             }
+
+             &__item {
+                opacity: 1;
+            }
+        }
+       
+
+        &__item {
+
+            &--mobile-toggle {
+                font-size: 2.4em;
+            }
+        }
+    }
 }
 
 .body-wrapper {
@@ -381,6 +412,7 @@ body {
         align-items: flex-start;
         width: 100%;
         padding: 20px;
+        background-color: #fefefe;
 
         &__heading {
             display: block;

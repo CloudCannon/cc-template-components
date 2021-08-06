@@ -17,7 +17,7 @@
 			max-height: 800px;
 		}
 
-		#{$c}__nav-item {
+		#{$c}__item {
 			opacity: 1;
 			pointer-events: all;
 		}
@@ -111,8 +111,8 @@
 			&:hover {
 				background: #fff;
 				color: var(--brand-color);
-
 				@media (max-width: 700px) {
+
 					background: unset;
 					color: rgba(255, 255, 255, 0.8);
 				}
@@ -122,7 +122,7 @@
 		&--mobile-toggle {
 			display: none;
 			margin-top: -6px;
-			font-size: 2.4em;
+			font-size: 2.8em;
 			width: auto;
 			opacity: 1;
 			pointer-events: all;
