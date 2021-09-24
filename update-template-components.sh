@@ -11,25 +11,24 @@ do
 
 	git branch cc-template-components_main cc-template-components/main
 
-	mkdir -p component-library
-	for folder in assets components
+	for folder in components
 	do
 		git checkout -f cc-template-components_main
 		git subtree split --prefix=$folder -b temp_branch
 		git checkout -f main
 
-		if [ -d component-library/$folder ]
+		if [ -d component-library ]
 		then
-				git subtree merge --prefix=component-library/$folder temp_branch
+				git subtree merge --prefix=component-library temp_branch
 		else
-				git subtree add --prefix=component-library/$folder temp_branch
+				git subtree add --prefix=component-library temp_branch
 		fi
 
 		git branch -D temp_branch
 	done
 
 	mkdir -p site
-	for folder in _includes _layouts
+	for folder in _includes _layouts assets
 	do
 		git checkout -f cc-template-components_main
 		git subtree split --prefix=$folder -b temp_branch
