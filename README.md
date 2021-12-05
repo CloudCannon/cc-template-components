@@ -6,3 +6,11 @@ This repository is the home for CloudCannon Bookshop template components and the
   `bash update-template-components.sh`
   The update script will then run through all templates and update components
 - When prompted for a commit message type `i` to begin writing your commit message. Press `Esc` followed by `:wq` when finished.
+
+Directory Structure
+- cc-templates
+  - cc-template-components
+  - hydra-jekyll-bookshop-template
+  - urban-jekyll-bookshop-template
+  - cause-jekyll-bookshop-template
+  - justice-jekyll-bookshop-template
