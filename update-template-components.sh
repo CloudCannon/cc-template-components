@@ -15,7 +15,7 @@ do
 	do
 		git checkout -f cc-template-components_main
 		git subtree split --prefix=$folder -b temp_branch
-		git checkout -f main
+		git checkout -f staging
 
 		if [ -d component-library ]
 		then
@@ -32,7 +32,7 @@ do
 	do
 		git checkout -f cc-template-components_main
 		git subtree split --prefix=$folder -b temp_branch
-		git checkout -f main
+		git checkout -f staging
 
 		if [ -d site/$folder ]
 		then
